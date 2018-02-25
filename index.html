@@ -14,25 +14,54 @@
                   <div class="col-md-6 offset-md-3">
                     <h1 class="display-4 text-center mb-3">Weight Converter</h1>
                     <form>
-                      <div class="form-group">
-                        <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">
-                      </div>
 
-                      <div class="form-group">
-                        <input id="gramsInput" type="number" class="form-control form-control-lg" placeholder="Enter Grams...">
-                      </div>
+                        <div class="dropdown show">
+                            <a class="card card-primary mb-2 dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="card-block">
+                                Select Measurement of Weight...
+                              </div>
+                            </a>                                  
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a onclick="showInput(this.id)" id="lbs" class="dropdown-item" href="#">
+                                Pounds
+                              </a>
 
-                      <div class="form-group">
-                        <input id="kgInput" type="number" class="form-control form-control-lg" placeholder="Enter Kg...">
-                      </div>
+                              <a onclick="showInput(this.id)" id="grams" class="dropdown-item" href="#">
+                                Grams
+                              </a>
+                                
+                              </a>
+                              <a onclick="showInput(this.id)" id="kg" class="dropdown-item" href="#">
+                                Kilograms
+                              </a>
 
-                      <div class="form-group">
-                        <input id="ozInput" type="number" class="form-control form-control-lg" placeholder="Enter Ounces...">
-                      </div>
-                          
+                              <a onclick="showInput(this.id)" id="oz" class="dropdown-item" href="#">
+                                Ounces      
+                              </a>
+                            </div>
+                        </div>
+                        <div id="input">
+                            <div class="form-group">
+                               <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">
+                            </div>
+                
+                            <div class="form-group">
+                                   <input id="gramsInput" type="number" class="form-control form-control-lg" placeholder="Enter Grams...">
+                            </div>
+                
+                            <div class="form-group">
+                                <input id="kgInput" type="number" class="form-control form-control-lg" placeholder="Enter Kg...">
+                            </div>
+                
+                            <div class="form-group">
+                                <input id="ozInput" type="number" class="form-control form-control-lg" placeholder="Enter Ounces...">
+                            </div>
+                                          
+                        </div>
+                      
                     </form>
                     <div id="output">
-                      <div id="poundsOutput1" class="card card-warning mb-2">
+                      <div id="lbsOutput1" class="card card-warning mb-2">
                         <div class="card-block">
                           <h4>Pounds:</h4>
                           <div id="poundsOutput"></div>
@@ -64,5 +93,7 @@
                 </div>
               </div>
     <script src="main.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="converter.js"></script>
 </body>
 </html>
