@@ -1,9 +1,26 @@
 // Hide Output Cards
 document.getElementById("output").style.visibility = "hidden";
 
+// Resets the display of the outputs
+function resetOutputs() {
+  document.getElementById("lbsOutput1").style.display = "block";
+  document.getElementById("gramsOutput1").style.display = "block";
+  document.getElementById("kgOutput1").style.display = "block";
+  document.getElementById("ozOutput1").style.display = "block";
+}           
+
+
+
 // Pounds Converter
 document.getElementById("lbsInput").addEventListener("input", function(e) {
+
+  // Runs resetOutputs function
+  resetOutputs();
+
+  // Makes output div visible
   document.getElementById("output").style.visibility = "visible";
+
+  // Removes this div's display attributes
   document.getElementById("lbsOutput1").style.display = "none";
   let lbs = e.target.value;
 
@@ -15,7 +32,14 @@ document.getElementById("lbsInput").addEventListener("input", function(e) {
 
 // Grams Converter
 document.getElementById("gramsInput").addEventListener("input", function(e) {
+
+  // Runs resetOutputs function
+  resetOutputs();
+
+  // Makes output div visible
   document.getElementById("output").style.visibility = "visible";
+
+  // Removes this div's display attributes
   document.getElementById("gramsOutput1").style.display = "none";
   let grams = e.target.value;
 
@@ -27,7 +51,14 @@ document.getElementById("gramsInput").addEventListener("input", function(e) {
 
 // Kilograms Converter
 document.getElementById("kgInput").addEventListener("input", function(e) {
+
+  // Runs resetOutputs function
+  resetOutputs();
+
+  // Makes output div visible
   document.getElementById("output").style.visibility = "visible";
+
+  // Removes this div's display attributes
   document.getElementById("kgOutput1").style.display = "none";
   let kg = e.target.value;
 
@@ -39,7 +70,14 @@ document.getElementById("kgInput").addEventListener("input", function(e) {
 
 // Ounces Converter
 document.getElementById("ozInput").addEventListener("input", function(e) {
+
+  // Runs resetOutputs function
+  resetOutputs();
+
+  // Makes output div visible
   document.getElementById("output").style.visibility = "visible";
+
+  // Removes this div's display attributes
   document.getElementById("ozOutput1").style.display = "none";
   let oz = e.target.value;
 

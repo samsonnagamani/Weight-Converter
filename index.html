@@ -13,33 +13,33 @@
                 <div class="row">
                   <div class="col-md-6 offset-md-3">
                     <h1 class="display-4 text-center mb-3">Weight Converter</h1>
-                    <form>
+                    <form id="myForm">
 
-                        <div class="dropdown show">
-                            <a class="card card-primary mb-2 dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <div class="card-block">
-                                Select Measurement of Weight...
-                              </div>
-                            </a>                                  
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a onclick="showInput(this.id)" id="lbs" class="dropdown-item" href="#">
-                                Pounds
-                              </a>
+                      <!-- Dropdown Start -->
+                      <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Select Measurement Of Weight &#x25BE;</button>
+                          <div id="myDropdown" class="dropdown-content">
 
-                              <a onclick="showInput(this.id)" id="grams" class="dropdown-item" href="#">
-                                Grams
-                              </a>
-                                
-                              </a>
-                              <a onclick="showInput(this.id)" id="kg" class="dropdown-item" href="#">
-                                Kilograms
-                              </a>
+                            <a onclick="showInput(this.id)" id="lbs"  href="#">
+                              Pounds (lbs)
+                            </a>
 
-                              <a onclick="showInput(this.id)" id="oz" class="dropdown-item" href="#">
-                                Ounces      
-                              </a>
-                            </div>
+                            <a onclick="showInput(this.id)" id="grams" href="#">
+                              Grams (g)
+                            </a>
+
+                            <a onclick="showInput(this.id)" id="kg" href="#">
+                              Kilograms (Kg)
+                            </a>
+
+                            <a onclick="showInput(this.id)" id="oz" href="#">
+                              Ounces (oz)
+                            </a>
+                          </div>
                         </div>
+                        <!-- Dropdown End -->
+
+                        <!-- Input Start -->
                         <div id="input">
                             <div class="form-group">
                                <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">
@@ -58,8 +58,11 @@
                             </div>
                                           
                         </div>
+                        <!-- Input End -->
                       
                     </form>
+
+                    <!-- Output Start -->
                     <div id="output">
                       <div id="lbsOutput1" class="card card-warning mb-2">
                         <div class="card-block">
@@ -82,18 +85,21 @@
                         </div>
                       </div>
               
-                      <div class="card card-danger mb-2">
-                        <div id="ozOutput1" class="card-block">
+                      <div id="ozOutput1" class="card card-danger mb-2">
+                        <div class="card-block">
                           <h4>Ounces:</h4>
                           <div id="ozOutput"></div>
                         </div>
                       </div>
                     </div>
+                    <!-- Output End -->
+
                   </div>
                 </div>
               </div>
-    <script src="main.js"></script>
-    <script src="dropdown.js"></script>
-    <script src="converter.js"></script>
+
+    <script src="js/dropdown.js"></script>
+    <script src="js/converter.js"></script>
+    <script src="js/dropdownInputs.js"></script>
 </body>
 </html>
