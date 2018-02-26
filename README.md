@@ -14,6 +14,9 @@ To download the repository
 
 There are no prequisites for this project
 
+## How to run
+
+Run local server or live server port settings to 5500
 
 ## Built With
 
