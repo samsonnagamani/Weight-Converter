@@ -20,27 +20,27 @@
                         <button onclick="myFunction()" class="dropbtn">Measurement Of Weight &#x25BE;</button>
                           <div id="myDropdown" class="dropdown-content">
 
-                            <a onclick="showInput(this.id)" id="lbs"  href="#">
+                            <a onclick="showInput(this.id); getCurrentInput(this.id);" id="lbs"  href="#">
                               Pounds (lbs)
                             </a>
 
-                            <a onclick="showInput(this.id)" id="grams" href="#">
+                            <a onclick="showInput(this.id); getCurrentInput(this.id);" id="grams" href="#">
                               Grams (g)
                             </a>
 
-                            <a onclick="showInput(this.id)" id="kg" href="#">
+                            <a onclick="showInput(this.id); getCurrentInput(this.id);" id="kg" href="#">
                               Kilograms (Kg)
                             </a>
 
-                            <a onclick="showInput(this.id)" id="oz" href="#">
+                            <a onclick="showInput(this.id); getCurrentInput(this.id);" id="oz" href="#">
                               Ounces (oz)
                             </a>
 
-                            <a onclick="showInput(this.id)" id="usTon" href="#">
+                            <a onclick="showInput(this.id); getCurrentInput(this.id);" id="usTon" href="#">
                               Short Tons (U.S)
                             </a>
 
-                            <a onclick="showInput(this.id)" id="gbTon" href="#">
+                            <a onclick="showInput(this.id); getCurrentInput(this.id);" id="gbTon" href="#">
                               Long Tons (G.B)
                             </a>
                           </div>
@@ -108,16 +108,16 @@
                         </div>
                       </div>
 
-                    <div id="usTonOutput1" class="card card-danger mb-2">
+                    <div id="usTonOutput1" class="card card-warning mb-2">
                         <div class="card-block">
-                          <h4>Short Tons:</h4>
+                          <h4>Short Tons (US):</h4>
                           <div id="usTonOutput"></div>
                       </div>
                     </div>
 
-                    <div id="gbTonOutput1" class="card card-danger mb-2">
+                    <div id="gbTonOutput1" class="card card-primary mb-2">
                         <div class="card-block">
-                          <h4>Long Tons:</h4>
+                          <h4>Long Tons (GB):</h4>
                           <div id="gbTonOutput"></div>
                       </div>
                     </div>
