@@ -2,6 +2,15 @@
 
 A weight converter made in Javascript
 
+Can convert tons us :
+* US Tons
+* GB Tons
+* Ounces
+* Pounds
+* Kilograms
+* Grams
+
+
 ## Getting Started
 
 Clone the repository in Github Desktop or you can use
@@ -17,6 +26,8 @@ There are no prequisites for this project
 ## How to run
 
 Run local server or live server port settings to 5500
+
+Or change domain name and port in js/dropdown.js line 8
 
 ## Built With
 
