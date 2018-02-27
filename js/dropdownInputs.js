@@ -14,6 +14,8 @@ function showInput(clicked_id) {
         document.getElementById("lbsInput").style.display = "none";
         document.getElementById("kgInput").style.display = "none";
         document.getElementById("ozInput").style.display = "none";
+        document.getElementById("usTonInput").style.display = "none";
+        document.getElementById("gbTonInput").style.display = "none";
         
         // Clear form
         document.getElementById('myForm').reset();
@@ -29,6 +31,8 @@ function showInput(clicked_id) {
         document.getElementById("gramsInput").style.display = "none";
         document.getElementById("kgInput").style.display = "none";
         document.getElementById("ozInput").style.display = "none"; 
+        document.getElementById("usTonInput").style.display = "none";
+        document.getElementById("gbTonInput").style.display = "none";
         
         // Clear form
         document.getElementById('myForm').reset();
@@ -43,10 +47,12 @@ function showInput(clicked_id) {
         document.getElementById("lbsInput").style.display = "none";
         document.getElementById("gramsInput").style.display = "none";
         document.getElementById("ozInput").style.display = "none";
+        document.getElementById("usTonInput").style.display = "none";
+        document.getElementById("gbTonInput").style.display = "none";
 
         // Clear form
         document.getElementById('myForm').reset();
-    } else {
+    } else if (clicked_id === "oz"){
         // Makes Input Visible
         document.getElementById("input").style.visibility = "visible";
 
@@ -57,6 +63,40 @@ function showInput(clicked_id) {
         document.getElementById("kgInput").style.display = "none";
         document.getElementById("lbsInput").style.display = "none";
         document.getElementById("gramsInput").style.display = "none";
+        document.getElementById("usTonInput").style.display = "none";
+        document.getElementById("gbTonInput").style.display = "none";
+
+        // Clear form
+        document.getElementById('myForm').reset();
+    } else if (clicked_id === "usTon"){
+        // Makes Input Visible
+        document.getElementById("input").style.visibility = "visible";
+
+        // Makes Ounces Input Visible
+        document.getElementById("usTonInput").style.display = "block";
+
+        // Hides the rest of the inputs
+        document.getElementById("kgInput").style.display = "none";
+        document.getElementById("lbsInput").style.display = "none";
+        document.getElementById("gramsInput").style.display = "none";
+        document.getElementById("ozInput").style.display = "none";
+        document.getElementById("gbTonInput").style.display = "none";
+
+        // Clear form
+        document.getElementById('myForm').reset();
+    } else if (clicked_id === "gbTon"){
+        // Makes Input Visible
+        document.getElementById("input").style.visibility = "visible";
+
+        // Makes Ounces Input Visible
+        document.getElementById("gbTonInput").style.display = "block";
+
+        // Hides the rest of the inputs
+        document.getElementById("kgInput").style.display = "none";
+        document.getElementById("lbsInput").style.display = "none";
+        document.getElementById("gramsInput").style.display = "none";
+        document.getElementById("usTonInput").style.display = "none";
+        document.getElementById("ozInput").style.display = "none";
 
         // Clear form
         document.getElementById('myForm').reset();

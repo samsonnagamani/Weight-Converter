@@ -35,6 +35,14 @@
                             <a onclick="showInput(this.id)" id="oz" href="#">
                               Ounces (oz)
                             </a>
+
+                            <a onclick="showInput(this.id)" id="usTon" href="#">
+                              Short Tons (U.S)
+                            </a>
+
+                            <a onclick="showInput(this.id)" id="gbTon" href="#">
+                              Long Tons (G.B)
+                            </a>
                           </div>
                         </div>
                         <!-- Dropdown End -->
@@ -50,11 +58,19 @@
                             </div>
                 
                             <div class="form-group">
-                                <input id="kgInput" type="number" class="form-control form-control-lg" placeholder="Enter Kg...">
+                                <input id="kgInput" type="number" class="form-control form-control-lg" placeholder="Enter Kgs...">
                             </div>
                 
                             <div class="form-group">
                                 <input id="ozInput" type="number" class="form-control form-control-lg" placeholder="Enter Ounces...">
+                            </div>
+
+                            <div class="form-group">
+                                <input id="usTonInput" type="number" class="form-control form-control-lg" placeholder="Enter Short Tons...">
+                            </div>
+
+                            <div class="form-group">
+                                <input id="gbTonInput" type="number" class="form-control form-control-lg" placeholder="Enter Long Tons...">
                             </div>
                                           
                         </div>
@@ -67,7 +83,7 @@
                       <div id="lbsOutput1" class="card card-warning mb-2">
                         <div class="card-block">
                           <h4>Pounds:</h4>
-                          <div id="poundsOutput"></div>
+                          <div id="lbsOutput"></div>
                         </div>
                       </div>
 
@@ -90,6 +106,19 @@
                           <h4>Ounces:</h4>
                           <div id="ozOutput"></div>
                         </div>
+                      </div>
+
+                    <div id="usTonOutput1" class="card card-danger mb-2">
+                        <div class="card-block">
+                          <h4>Short Tons:</h4>
+                          <div id="usTonOutput"></div>
+                      </div>
+                    </div>
+
+                    <div id="gbTonOutput1" class="card card-danger mb-2">
+                        <div class="card-block">
+                          <h4>Long Tons:</h4>
+                          <div id="gbTonOutput"></div>
                       </div>
                     </div>
                     <!-- Output End -->

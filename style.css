@@ -2,6 +2,7 @@ body{
     margin-top:70px;
     background:#333;
     color:#fff;
+    overflow: scroll;
   }
 
   .dropbtn {
@@ -13,7 +14,7 @@ body{
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 15px;
-    width: 200%;
+    width: 240%;
 }
 
 .dropbtn:hover, .dropbtn:focus {
